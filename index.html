@@ -6,11 +6,13 @@
   <title>Privacy Policy — BondhuGo</title>
   <meta name="description" content="Privacy Policy for BondhuGo. Learn how we collect, use, and protect your information." />
   <style>
+    /* Premium & Professional Styling Adjustments */
     :root{
-      --bg:#f7f8fa;
+      --bg:#f9fafb; /* Lighter, cleaner background */
       --card:#fff;
-      --muted:#6b7280;
-      --accent:#0b69ff;
+      --text-primary: #111827; /* Deep primary text color */
+      --text-muted:#4b5563; /* Muted text for secondary info */
+      --accent:#1e40af; /* Deep, corporate blue */
       --maxw:900px;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
@@ -18,8 +20,8 @@
     body{
       margin:0;
       background:var(--bg);
-      color:#111827;
-      line-height:1.6;
+      color:var(--text-primary);
+      line-height:1.7; /* Increased line-height for better readability */
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
       padding:36px 16px;
@@ -32,21 +34,31 @@
     }
     .card{
       background:var(--card);
-      border-radius:12px;
-      padding:28px;
-      box-shadow:0 6px 20px rgba(16,24,40,0.06);
-      border:1px solid rgba(15,23,42,0.03);
+      border-radius:14px; /* Slightly rounder corners */
+      padding:32px; /* Increased padding */
+      /* Premium Shadow Effect */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.04);
+      border:1px solid rgba(0, 0, 0, 0.05);
     }
-    h1{margin:0 0 8px; font-size:1.6rem;}
-    .meta{color:var(--muted); margin-bottom:18px;}
-    h2{margin-top:20px; font-size:1.05rem; color:#0f172a;}
-    h3{margin-top:14px; font-size:0.98rem;}
-    p, li{font-size:0.97rem;}
-    ul{margin-top:8px; padding-left:20px;}
-    a{color:var(--accent); text-decoration:none;}
-    footer{margin-top:26px; color:var(--muted); font-size:0.9rem;}
+    h1{margin:0 0 10px; font-size:1.8rem; font-weight:700;} /* Bolder, bigger H1 */
+    .meta{color:var(--text-muted); margin-bottom:24px; font-size: 0.95rem;} /* Better spacing and color */
+    h2{margin-top:28px; font-size:1.25rem; color:var(--accent); font-weight:600;} /* Bigger, accented H2 */
+    h3{margin-top:18px; font-size:1.05rem; color:var(--text-primary); font-weight:600;} /* Bolder H3 */
+    p, li{font-size:1rem;} /* Slightly bigger body text for readability */
+    ul{margin-top:8px; padding-left:24px;}
+    a{color:var(--accent); text-decoration:underline;} /* Added underline for link clarity */
+    a:hover{text-decoration:none;}
+    footer{
+      margin-top:32px;
+      color:var(--text-muted);
+      font-size:0.9rem;
+      border-top: 1px solid #e5e7eb; /* Separator for footer */
+      padding-top: 16px;
+    }
     @media (max-width:520px){
-      .card{padding:18px;}
+      .card{padding:20px;}
+      h1{font-size:1.5rem;}
+      h2{font-size:1.15rem;}
     }
   </style>
 </head>
@@ -55,7 +67,8 @@
     <article class="card" role="article" aria-labelledby="title">
       <header>
         <h1 id="title">Privacy Policy for BondhuGo</h1>
-        <div class="meta"><strong>Last Updated:</strong> November 12, 2025</div>
+        <!-- Updated Date -->
+        <div class="meta"><strong>Last Updated:</strong> November 14, 2025</div>
       </header>
 
       <section>
@@ -86,6 +99,8 @@
         <li><strong>Provide and Maintain the Service:</strong> To create and manage your account, display your profile with your username, and show your posts to others.</li>
         <li><strong>Personalize Your Experience:</strong> To provide features like Saved Posts and Search History.</li>
         <li><strong>Ensure Security:</strong> To protect your account and our platform from fraud and abuse.</li>
+        <!-- New point added regarding the verification system -->
+        <li><strong>Manage Verification:</strong> To identify and designate certain accounts as 'Verified' (with a verification badge/status) based on internal criteria indicating genuine, original content creation, identity confirmation, or public interest. This verification system is selective and is not available to all users.</li>
         <li><strong>Improve Our App:</strong> To understand how our users interact with BondhuGo so we can fix bugs and build new features.</li>
       </ul>
 
