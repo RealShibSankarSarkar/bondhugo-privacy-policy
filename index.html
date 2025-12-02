@@ -6,13 +6,13 @@
   <title>Privacy Policy — BondhuGo</title>
   <meta name="description" content="Privacy Policy for BondhuGo. Learn how we collect, use, and protect your information." />
   <style>
-    /* Premium & Professional Styling Adjustments */
+    /* Premium & Professional Styling Adjustments (Google-like Clean Aesthetic) */
     :root{
       --bg:#f9fafb; /* Lighter, cleaner background */
       --card:#fff;
       --text-primary: #111827; /* Deep primary text color */
       --text-muted:#4b5563; /* Muted text for secondary info */
-      --accent:#1e40af; /* Deep, corporate blue */
+      --accent:#1e40af; /* Deep, corporate blue - similar to material/corporate */
       --maxw:900px;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
@@ -36,23 +36,32 @@
       background:var(--card);
       border-radius:14px; /* Slightly rounder corners */
       padding:32px; /* Increased padding */
-      /* Premium Shadow Effect */
+      /* Premium Shadow Effect - subtle and clean */
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.04);
       border:1px solid rgba(0, 0, 0, 0.05);
     }
-    h1{margin:0 0 10px; font-size:1.8rem; font-weight:700;} /* Bolder, bigger H1 */
-    .meta{color:var(--text-muted); margin-bottom:24px; font-size: 0.95rem;} /* Better spacing and color */
-    h2{margin-top:28px; font-size:1.25rem; color:var(--accent); font-weight:600;} /* Bigger, accented H2 */
-    h3{margin-top:18px; font-size:1.05rem; color:var(--text-primary); font-weight:600;} /* Bolder H3 */
-    p, li{font-size:1rem;} /* Slightly bigger body text for readability */
+    h1{margin:0 0 10px; font-size:1.8rem; font-weight:700;}
+    .meta{color:var(--text-muted); margin-bottom:24px; font-size: 0.95rem;}
+    h2{margin-top:28px; font-size:1.25rem; color:var(--accent); font-weight:600;}
+    h3{margin-top:18px; font-size:1.05rem; color:var(--text-primary); font-weight:600;}
+    p, li{font-size:1rem;}
     ul{margin-top:8px; padding-left:24px;}
-    a{color:var(--accent); text-decoration:underline;} /* Added underline for link clarity */
+    a{color:var(--accent); text-decoration:underline;}
     a:hover{text-decoration:none;}
+    .note{
+      background-color: #eef2ff; /* Light accent background */
+      border-left: 4px solid var(--accent);
+      padding: 12px 16px;
+      margin: 16px 0;
+      color: var(--text-primary);
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
     footer{
       margin-top:32px;
       color:var(--text-muted);
       font-size:0.9rem;
-      border-top: 1px solid #e5e7eb; /* Separator for footer */
+      border-top: 1px solid #e5e7eb;
       padding-top: 16px;
     }
     @media (max-width:520px){
@@ -67,8 +76,7 @@
     <article class="card" role="article" aria-labelledby="title">
       <header>
         <h1 id="title">Privacy Policy for BondhuGo</h1>
-        <!-- Updated Date -->
-        <div class="meta"><strong>Last Updated:</strong> November 14, 2025</div>
+        <div class="meta"><strong>Last Updated:</strong> October 24, 2024</div>
       </header>
 
       <section>
@@ -79,54 +87,74 @@
       <h2>1. Information We Collect</h2>
       <p>To provide and improve our service, we collect the following types of information:</p>
 
-      <h3>a. Information You Provide to Us</h3>
+      <h3>a. Information You Provide</h3>
       <ul>
-        <li><strong>Profile Information:</strong> When you create or update your profile, you provide us with your name, a unique public username (@handle), date of birth, and gender. You may also choose to add a bio.</li>
-        <li><strong>User Content:</strong> We collect the content you create on our platform, including posts and comments.</li>
-        <li><strong>Saved Content:</strong> We store a list of the posts you save so that you can view them later.</li>
+        <li><strong>Profile Information:</strong> When you create your profile, you provide us with your name, a unique public username, date of birth, and gender. You can also add an optional bio and profile picture.</li>
+        <li><strong>Public Content:</strong> We collect content you submit to public areas of the app, such as posts (including text, photos, and videos) and comments.</li>
+        <li><strong>Private Communications:</strong> We facilitate the delivery of private messages between users. As these messages are end-to-end encrypted (see Section 3), we cannot read their content. We also collect media you send in chats, like GIFs and voice messages.</li>
+        <li><strong>Saved Content:</strong> We store a list of posts you save to make them accessible to you later.</li>
       </ul>
 
       <h3>b. Information Collected Automatically</h3>
       <ul>
-        <li><strong>Google Sign-In:</strong> When you sign up using Google, we receive personal information from your Google account, such as your name, email address, and profile picture. We only use this for authentication and to populate your initial profile.</li>
-        <li><strong>Search History:</strong> To make it easier to find people again, your recent search history is stored locally on your device. This information is private to you and is not sent to our servers.</li>
-        <li><strong>Usage Data:</strong> We use Firebase services, which may automatically collect data about how you interact with our app, such as device information and crash reports, to help us improve our service.</li>
+        <li><strong>Google Sign-In:</strong> When you sign up using Google, we receive your name, email address, and profile picture from your Google account to create your BondhuGo profile.</li>
+        <li><strong>Push Notification Token:</strong> We collect a unique token (FCM Token) for your device to send you push notifications about important activities, such as new messages and friend requests.</li>
+        <li><strong>Usage and Device Data:</strong> We use Firebase services, which may automatically collect technical data like device information, crash reports, and performance metrics to help us improve our service and fix bugs.</li>
+      </ul>
+
+      <h3>c. Payment Information</h3>
+       <ul>
+        <li><strong>Premium Services:</strong> If you purchase a premium subscription, your payment information is typically collected and processed directly by our payment partner, **Razorpay**. **Please note that Razorpay integration is currently disabled and subscription purchases are unavailable. This will be addressed in a subsequent application update.** We do not receive or store your full credit card or bank account details.</li>
       </ul>
 
       <h2>2. How We Use Your Information</h2>
-      <p>We use the information we collect to:</p>
+      <p>We use the information we collect for the following purposes:</p>
       <ul>
-        <li><strong>Provide and Maintain the Service:</strong> To create and manage your account, display your profile with your username, and show your posts to others.</li>
-        <li><strong>Personalize Your Experience:</strong> To provide features like Saved Posts and Search History.</li>
-        <li><strong>Ensure Security:</strong> To protect your account and our platform from fraud and abuse.</li>
-        <!-- New point added regarding the verification system -->
-        <li><strong>Manage Verification:</strong> To identify and designate certain accounts as 'Verified' (with a verification badge/status) based on internal criteria indicating genuine, original content creation, identity confirmation, or public interest. This verification system is selective and is not available to all users.</li>
-        <li><strong>Improve Our App:</strong> To understand how our users interact with BondhuGo so we can fix bugs and build new features.</li>
+        <li><strong>Provide and Maintain the Service:</strong> To create your account, deliver private messages, display your profile and public content, and enable app functionalities.</li>
+        <li><strong>Communicate with You:</strong> To send you push notifications about new messages, friend requests, and other in-app activities.</li>
+        <li><strong>Personalize Your Experience:</strong> To provide features like Saved Posts and show content relevant to your interests.</li>
+        <li><strong>Process Payments:</strong> To manage subscriptions and access to premium features through our payment partner (when available).</li>
+        <li><strong>Ensure Security:</strong> To protect your account and our platform from fraud and unauthorized access.</li>
+        <li><strong>Improve Our App:</strong> To analyze usage data, fix bugs, and develop new features.</li>
       </ul>
+      
+      <div class="note" role="alert">
+        <strong>Important Service Note:</strong> We are aware of a problem currently affecting the reliability of the push notification system. This issue will be resolved and fixed in a subsequent application update.
+      </div>
 
       <h2>3. Data Storage and Security</h2>
+
+      <h3>a. End-to-End Encryption (E2EE)</h3>
+      <p><strong>Your privacy is our priority.</strong> All one-to-one private chat messages on BondhuGo are <strong>end-to-end encrypted</strong>. This means that only you and the person you are communicating with can read what is sent. No one in between, not even BondhuGo, can decrypt and read your messages.</p>
+
+      <h3>b. Data Storage</h3>
       <ul>
-        <li><strong>Storage:</strong> Your data, including your profile information, username, and posts, is securely stored on <strong>Google Cloud Firestore</strong>. Your search history is stored only on your local device.</li>
-        <li><strong>Security:</strong> We take the security of your data seriously. We use Firestore Security Rules to protect your data from unauthorized access. Only you can edit your own profile and delete your own content.</li>
+        <li>Your profile information, public posts, and other metadata are securely stored on <strong>Google Cloud Firestore</strong>.</li>
+        <li>Media files you upload, such as profile pictures, images, videos, and voice messages, are stored on <strong>Firebase Storage</strong>.</li>
+        <li>Your search history is stored only on your local device and is not sent to our servers.</li>
       </ul>
+      
+      <h3>c. Data Security</h3>
+      <p>We implement strong security measures, including Firestore Security Rules, to protect your data from unauthorized access. You have full control to edit your profile and delete your own content.</p>
 
       <h2>4. Third-Party Services</h2>
-      <p>We rely on the following third-party services, which have their own privacy policies:</p>
+      <p>We rely on the following trusted third-party services, which have their own privacy policies:</p>
       <ul>
-        <li><strong>Google Sign-In:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
-        <li><strong>Firebase & Google Cloud Firestore:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a></li>
+        <li><strong>Google Sign-In, Firebase, Google Cloud:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+        <li><strong>Giphy:</strong> To provide GIFs in chat. <a href="https://support.giphy.com/hc/en-us/articles/360020028332-GIPHY-Privacy-Policy" target="_blank" rel="noopener noreferrer">Giphy Privacy Policy</a></li>
+        <li><strong>Razorpay:</strong> For processing payments. **Note: This service is currently disabled.** <a href="https://razorpay.com/privacy/" target="_blank" rel="noopener noreferrer">Razorpay Privacy Policy</a></li>
       </ul>
       <p>We are not responsible for the privacy practices of these third-party services.</p>
 
       <h2>5. Your Rights and Choices</h2>
       <p>You have the right to access and control your personal data.</p>
       <ul>
-        <li><strong>Access and Update:</strong> You can view and edit your profile information (name, username, and bio) at any time through the app settings.</li>
-        <li><strong>Data Control:</strong> You can delete your own posts and comments. You can also view and clear your on-device search history from within the app. To delete your entire account, please contact us.</li>
+        <li><strong>Access and Update:</strong> You can view and edit your profile information at any time through the app settings.</li>
+        <li><strong>Data Deletion:</strong> You can delete your own posts and comments. You can also permanently delete your entire account and associated data directly from the app's settings screen.</li>
       </ul>
 
       <h2>6. Children's Privacy</h2>
-      <p>BondhuGo is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+      <p>BondhuGo is not intended for use by children under the age of **16**. We do not knowingly collect personal information from children under **16**.</p>
 
       <h2>7. Changes to This Privacy Policy</h2>
       <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy within the app or on our website. You are advised to review this policy periodically.</p>
